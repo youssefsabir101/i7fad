@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add your other meta tags, title, and stylesheets -->
+
+  <!-- Allow navigation to external URLs -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+  <!-- Allow navigation to specific domains -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready; connect-src * 'self' 'unsafe-inline' 'unsafe-eval'; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="sabir.png">
+  <title>sabir | Correction</title>
+</head>
+<body style="text-align: start !important">
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">i7fad</a>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a href="history.html">History</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-result-tilte">
+    <h4>Results</h4>
+      <p class="error-message"><span id="note">40</span>/<span id="denominator">40</span></p>
+      <p class="error-message">errors: <span id="counter">0</span></p>
+      <p class="error-message">missing: <span id="missing">0</span></p>
+  </div>
+  <div >
+    <ul id="results-container">    
+    <!-- Results will be displayed here -->
+    </ul>
+  </div>
+
+
+  <button id="saveButton" >Save Results</button>
+  
+  <br><br><br>
+  <script src="script.js"></script>
+</body>
+</html>

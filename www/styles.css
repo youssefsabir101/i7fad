@@ -1,0 +1,339 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .navbar {
+    background-color: rgb(69, 50, 240);
+    padding: 10px 20px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-menu li {
+    margin-right: 12px;
+  }
+  
+  .navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-menu li a:hover {
+    color: #ffffff;
+  }
+  
+
+
+  
+
+
+
+
+  .mcq {
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    align-items: center;
+  }
+  .question {
+    flex: 1;
+  }
+  .options {
+    display: flex;
+  }
+  .options label {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .mcq {
+      margin-left: 5%;
+      margin-right: 5%;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+
+
+
+  #results-container{
+    margin-bottom: 50px;
+  }
+
+#results-container , h4 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#results-container p {
+  font-size: larger;
+}
+.back-button{
+  text-decoration: none;
+  margin:500px 10px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(69, 50, 240);
+}
+
+
+ .styled-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgb(69, 50, 240);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.styled-checkbox:checked {
+    background-color: rgb(69, 50, 240);
+    border-color: rgb(69, 50, 240);
+}
+
+.styled-checkbox::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 18px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    transform-origin: bottom left;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.styled-checkbox:checked::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(45deg);
+} 
+
+
+.options label {
+  display: inline-flex; /* Display label contents in a flex container */
+  align-items: center; /* Align items vertically */
+}
+
+.options label span {
+  margin-top: 4px;
+  margin-left: 2px; /* Adjust the spacing between the checkbox and the span */
+  
+}
+
+
+
+#serieSelect {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px;
+  border: 2px solid rgb(69, 50, 240);
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+  width: 200px;
+}
+
+/* Custom select arrow */
+#serieSelect::after {
+  content: '\25BE'; /* Unicode character for down arrow */
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #333; /* Color of the arrow */
+}
+
+/* Custom dropdown options */
+#serieSelect option {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style when hovering over options */
+#serieSelect option:hover {
+  background-color: #ddd;
+}
+
+/* Hide the default dropdown arrow */
+#serieSelect::-ms-expand {
+  display: none;
+}
+
+
+button {
+  margin: 25px 0;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(69, 50, 240);
+}
+
+
+
+
+
+
+.container {
+  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  margin-top: 90px;
+}
+
+.developer {
+  margin-bottom: 40px;
+}
+
+.developer h2 {
+  margin-bottom: 10px;
+}
+
+.developer p {
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+      padding: 10px;
+  }
+}
+
+ul{
+  list-style-type: none;
+}
+.styled-li{
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 4px;
+}
+.styled-li-red{
+  color: red;
+}
+.styled-li-black{
+  color: black;
+}
+
+.container-result-tilte {
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-message {
+  margin-left: auto;
+}
+
+#counter{
+  color: red;
+  font-size: medium;
+}
+#note{
+  color: green;
+  font-size: medium;
+  font-weight: bold;
+  
+}
+
+#missing{
+  color: rgb(255, 71, 15);
+  font-size: medium;
+}
+
+.container-res{
+  text-align: center;
+}
+
+#saveButton {
+  display: block;
+  margin: 0 auto; /* This centers the button horizontally */
+  text-align: center; /* This aligns the text inside the button to center */
+}
+
+
+
+
+
+.dropdown-content {
+  display: none;
+  text-align: start !important;
+}
+
+.dropdown-button {
+  margin-top: -10px;
+  padding: 4px;
+  color: white;
+  border-radius: 5px;
+  font-size: small;
+  cursor: pointer;
+  text-align: start !important;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgb(69, 50, 240);
+}
+
+.copy-phone ,.copy-link ,.copy-email{
+  text-decoration: none;
+  color: rgb(69, 50, 240);
+}
+
+
+.alert {
+  background-color: rgb(69, 50, 240); 
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: fixed; 
+  top: 70px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 50%; 
+  z-index: 1000; 
+  transition: all 1s ease-out;
+}

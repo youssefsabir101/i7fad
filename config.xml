@@ -1,0 +1,14 @@
+<?xml version = '2.1' encoding = 'UTF-8' ?>
+<widget
+    android-versionCode = '1'
+    id = 'com.CodePocker.OneClickPrinter'
+    version = '1.0.0'
+    xmlns = 'https://www.w3.org/ns/widgets'>
+
+    <name>I7fad</name>
+    <description>i7fad</description>
+    <author email="sabircode.me@gmail.com"> Sabir Youssef </author>
+    <icon src="www/sabir.png" />
+    <preference name = 'orientation' value = 'portrait'/>
+
+</widget>
